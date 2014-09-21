@@ -47,7 +47,7 @@ void CScroll::compileSlot(CSlotDisplayList info)
 
     info.transpose(m_transpose);
     CStavePos stavePos;
-    int av8Left = info.getAv8Left();
+    //    int av8Left = info.getAv8Left();
     for (i=0; i < info.length(); i++)
     {
         stavePos.notePos(info.getSymbol(i).getHand(), info.getSymbol(i).getNote());

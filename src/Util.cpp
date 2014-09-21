@@ -133,7 +133,7 @@ void ppTiming(const char *msg, ...)
     va_list ap;
 
     va_start(ap, msg);
-    fprintf(stdout, "T %4d " , s_realtime.restart() );
+    fprintf(stdout, "Time %4d " , s_realtime.restart() );
     vfprintf(stdout, msg, ap);
     va_end(ap);
     fputc('\n', stdout);
